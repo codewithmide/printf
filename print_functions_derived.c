@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
-
+#include <unistd.h>
+#include <stdio.h>
 /**
  * print_unsignedToBinary - prints an integer.
  * @arg: argument

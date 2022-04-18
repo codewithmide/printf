@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <unistd.h>
+#include <math.h>
 /**
  * print_hex_base - base function for printing hexadecimal numbers
  * @arg: argument list containing hexadecimal
