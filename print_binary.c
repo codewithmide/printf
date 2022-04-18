@@ -9,12 +9,10 @@
 
 void print_binary(unsigned int n, unsigned int *printed)
 {
-	int *printed=0,rem,f=1;
-	while(n != 0){
-		rem = n % 2;
-		*printed = *printed + rem * f;
-		f = f * 10;
-		n = n / 2;
+	if  (n > 0)
+	{
+		*printed += 1;
+		print_binary(n >> 1, printed);
 	}
-	return *printed;
+	_putchar((n & 1) + '0');
 }
